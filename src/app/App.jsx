@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import ChatArea from '../components/ChatArea';
+import Chat from '../components/Chat';
 
 export default class App extends Component {
   constructor(props) {
@@ -14,7 +14,7 @@ export default class App extends Component {
     return (
       <>
         <h1>Chat RS schol 2019</h1>
-        <div><ChatArea /></div>
+        <div><Chat /></div>
       </>
     );
   }
