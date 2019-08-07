@@ -6,10 +6,7 @@ import ChatMessage from '../ChatMessage';
 const URL = 'ws://st-chat.shas.tel'
 
 class ChatArea extends Component {
-  state = {
-    name: 'Igor',
-    messages: [],
-  }
+
 
   ws = new WebSocket(URL);
 

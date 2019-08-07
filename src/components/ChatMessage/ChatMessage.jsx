@@ -1,6 +1,10 @@
 import React from 'react'
 
-export default ({ name, message }) =>
-  <p>
-    <strong>{name}</strong> <em>{message}</em>
-  </p>
+ChatMessage({ name, message, time }) {
+
+}
+<p>
+  <strong>{name}</strong> <em>{message}</em> <span>{time}</span>
+</p>
+
+export default ChatMessage;
