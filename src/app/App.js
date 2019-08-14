@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import MessagesList from '../components/MessagesList/MessagesList'
 import Header from '../components/Header/Header';
+import ChatInput from '../components/ChatInput/ChatInput'
 
 import './app.scss';
 
@@ -35,7 +36,7 @@ export default class App extends Component {
   sendMessage(text) {
     this.socket.send(JSON.stringify({
       from: 'user',
-      messsage: text
+      message: text
     }));
   }
 
@@ -60,10 +61,15 @@ export default class App extends Component {
     return (
       <>
         <Header />
-        <div className='wrapper'>
+        <section className='wrapper'>
           <MessagesList
             messages={this.state.messages} />
-        </div>
+        </section>
+        <section>
+          <ChatInput
+            sendMessage={this.sendMessage} />
+        </section>
+
       </>
     );
   }
