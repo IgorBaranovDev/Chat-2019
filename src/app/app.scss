@@ -1,0 +1,33 @@
+.wrapper-login {
+  display: flex;
+  justify-content: flex-end;
+  height: 4vh;
+  margin-right: 6vh;
+  margin-bottom: 2vh;
+}
+
+.wrapper-messageList {
+  display: flex;
+  width: 90%;
+  height: 73vh;
+  margin: 0 auto;
+}
+
+.wrapper-chatInput {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper-login {
+    justify-content: space-around;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper-login {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+  }
+}

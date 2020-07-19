@@ -1,0 +1,59 @@
+.input-user-name {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2vh;
+  font-weight: normal;
+  background: #ffffff;
+  padding: 4px;
+  text-align: center;
+  margin-right: 10px;
+  overflow: hidden;
+  outline: none;
+  border: 2px solid #6c5bf3;
+  border-bottom-right-radius: 10px;
+}
+
+.submit-user-name {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5vh;
+  background-color: #c7def5;
+  border: 2px solid #6c5bf3;
+  padding: 4px;
+  font-weight: bold;
+  color: #6c5bf3;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  line-height: 0;
+  border-bottom-right-radius: 10px;
+
+  &:hover {
+    color: #ffffff;
+    background: #6c5bf3;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+  .input-user-name {
+    margin: 5px 10%;
+    font-size: 3vh;
+  }
+
+  .submit-user-name {
+    font-size: 2.5vh;
+    margin: 5px 10%;
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 320px) {}

@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: center;
+
+  .header-text {
+    color: #6c5bf3;
+    font-size: 3vh;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    .header-text {
+      text-align: center;
+      line-height: 1.5;
+    }
+  }
+}
